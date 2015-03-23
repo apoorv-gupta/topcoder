@@ -14,6 +14,7 @@ def calc(f):
 if(len(sys.argv)>4):
  print "needs three arguments: 250 500 1000"
  sys.exit(0);
+
 val=0
 if(len(sys.argv)>1):
  val += calc(float(sys.argv[1])/250)
@@ -28,4 +29,3 @@ elif((val<4500) and (len(sys.argv)==4)):
  print "Congrats! You could have been a Stud!"
 else:
  print "You would have taken "+str(1+((val)/60))+" minutes"
-
